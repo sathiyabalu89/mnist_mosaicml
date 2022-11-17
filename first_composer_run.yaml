@@ -37,7 +37,7 @@ parameters:
         - kaiming_normal
         - bn_uniform
       num_classes: 10
-  max_duration: 10ep
+  max_duration: 1ep
   train_batch_size: 2048
   eval_batch_size: 1000
   seed: 17
