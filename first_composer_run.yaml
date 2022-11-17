@@ -5,7 +5,7 @@ gpu_num: 0
 image: mosaicml/composer:0.8.0 # Use the MosaicML image that has Composer pre-installed
 integrations:
   - integration_type: git_repo
-    git_repo: mosaicml/mnist_mosaicml
+    git_repo: sathiyabalu89/mnist_mosaicml
     git_branch: main
     path: mnist_mosaicml
 command: composer mnist_mosaicml/entrypoint.py -f /mnt/config/parameters.yaml
