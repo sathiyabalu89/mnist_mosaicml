@@ -50,3 +50,4 @@ parameters:
   grad_accum: 1
   progress_bar: false
   log_to_console: true
+  save_folder: model
