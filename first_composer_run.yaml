@@ -1,6 +1,6 @@
 run_name: classify-mnist
 cluster: r7z3
-gpu_type: 'a100_40gb'
+gpu_type: 'CPU'
 gpu_num: 0
 image: mosaicml/composer:0.8.0 # Use the MosaicML image that has Composer pre-installed
 integrations:
