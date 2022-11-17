@@ -1,14 +1,14 @@
 run_name: classify-mnist
-cluster: <your cluster>
-gpu_type: <cluster gpu type (ex. a100_40gb)>
+cluster: r7z3
+gpu_type: 'a100_40gb'
 gpu_num: 8
 image: mosaicml/composer:0.8.0 # Use the MosaicML image that has Composer pre-installed
 integrations:
   - integration_type: git_repo
-    git_repo: <org/my-repo> # ex. mosaicml/composer
-    git_branch: <my-branch>
-    path: <my_training_folder> # The folder to clone the code into
-command: composer <my_training_folder>/entrypoint.py -f /mnt/config/parameters.yaml
+    git_repo: mosaicml/mnist_mosaicml
+    git_branch: main
+    path: mnist_mosaicml
+command: composer mnist_mosaicml/entrypoint.py -f /mnt/config/parameters.yaml
 parameters:
   train_dataset:
     mnist:
